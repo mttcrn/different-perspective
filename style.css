@@ -21,16 +21,19 @@ body{
   background-color: var(--nightSky);
   margin: 0;
   overflow: hidden;
+  height: 100vh;
+  color: white;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .sky {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .star-big {
-    width: 3px;
-    height: 3px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: var(--starsColor);
     position: absolute;
@@ -38,8 +41,8 @@ body{
 }
 
 .star-med {
-    width: 2px;
-    height: 2px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: var(--starsColor);
     position: absolute;
@@ -47,8 +50,8 @@ body{
 }
 
 .star-small {
-    width: 1px;
-    height: 1px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background-color: var(--starsColor);
     position: absolute;
@@ -307,4 +310,26 @@ body{
   100% {
     margin-left: 170%;
   }
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover{
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 8px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
 }
